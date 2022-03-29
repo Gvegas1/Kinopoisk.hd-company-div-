@@ -3,13 +3,12 @@ import React from "react";
 export const SliderButton = ({
   onClick,
   positioningClassName,
-  left,
-  right,
+  rotate,
   ...props
 }) => {
   let style = {
     ...props.style,
-    transform: left ? "rotate(180deg)" : "rotate(0)",
+    transform: rotate ? "rotate(180deg)" : "rotate(0)",
   };
 
   return (

@@ -1,0 +1,206 @@
+@media (max-width: 1920px) and (max-height: 500px) {
+  .background-clouds__first-layer {
+    background-position: top center, -374px -49px, 492px -220px, 11px 0px,
+      76px 366px, 306px 327px, 478px 273px, -201px 276px;
+  }
+  .background-clouds__second-layer {
+    background-position: 90px -5px, -13px 167px, 253px 114px;
+  }
+
+  .promocode-btn-wrapper {
+    position: absolute;
+    bottom: 14px;
+    .promocode__link-text {
+      font-size: 13px;
+    }
+  }
+
+  .slider {
+    .slider-button {
+      bottom: 64%;
+    }
+    .slider__counter-wrapper {
+      width: 40px;
+      height: 40px;
+      bottom: 65%;
+      .slider__counter-child {
+        transform: translateY(2px);
+        font-size: 13px;
+      }
+    }
+
+    .slider-item-container {
+      .all-pages {
+        .slider-item {
+          height: 370px;
+          .slider__image-wrapper {
+            bottom: -62px;
+            left: 35%;
+            .racer {
+              width: 227.13px;
+              height: 370px;
+            }
+          }
+          .slider__description {
+            bottom: 69px;
+            font-size: 11px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .H__section-hero {
+    .H__hero__rect-container {
+      top: 25%;
+      height: 120px;
+      .active {
+        padding: 8px 0;
+        .rect__text {
+          font-size: 14px;
+        }
+        .rect__count {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .main-title {
+    font-size: 30px;
+  }
+
+  .logo_darkGrey-img {
+    width: 160.4px;
+  }
+
+  .H__hero__home-link {
+    top: 38%;
+    .home-link-text {
+      font-size: 14px;
+    }
+  }
+
+  .H__hero__action-wrapper {
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 1326px) and (max-height: 500px) {
+  .background-clouds__first-layer {
+    background-position: top center, -374px -49px, 492px -220px, 11px 0px,
+      76px 366px, 375px 265px, 780px 245px, -221px 276px;
+  }
+
+  .slider {
+    .slider-item-container {
+      .all-pages {
+        .slider-item {
+          .slider__image-wrapper {
+            left: 39%;
+          }
+          .slider__description {
+            width: 34%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1180px) and (max-height: 500px) {
+  .slider {
+    .slider-item-container {
+      .all-pages {
+        .slider-item {
+          .slider__image-wrapper {
+            left: 38%;
+          }
+          .slider__description {
+            width: 42%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1026px) and (max-height: 500px) {
+  .slider {
+    .slider-item-container {
+      .all-pages {
+        .slider-item {
+          .slider__image-wrapper {
+            left: 36%;
+          }
+          .slider__description {
+            width: 42%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) and (max-height: 500px) {
+    .slider {
+      .slider-item-container {
+        .all-pages {
+          .slider-item {
+            .slider__description {
+              width: 45%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 908px) and (max-height: 500px) {
+    .slider {
+      .slider-item-container {
+        .all-pages {
+          .slider-item {
+            .slider__image-wrapper {
+                left: 35%;
+              }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width:   883px) and (max-height: 500px) {
+    .slider {
+      .slider-item-container {
+        .all-pages {
+          .slider-item {
+            .slider__image-wrapper {
+                left: 34%;
+              }
+            .slider__description {
+                width: 50%;
+              }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width:   795px) and (max-height: 500px) {
+    .slider {
+      .slider-item-container {
+        .all-pages {
+          .slider-item {
+            .slider__image-wrapper {
+                left: 37%;
+              }
+            .slider__description {
+                width: 60%;
+              }
+          }
+        }
+      }
+    }
+  }

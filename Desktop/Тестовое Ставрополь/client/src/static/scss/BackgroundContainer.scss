@@ -1,0 +1,36 @@
+.background-container {
+  position: absolute;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+}
+
+.background-clouds__first-layer {
+  width: 100%;
+  height: 100%;
+  background: url("../img/clouds/clouds__rectangle-top.png"),
+    url("../img/clouds/cloud-top-left.png"),
+    url("../img/clouds/cloud-top-right.png"),
+    url("../img/clouds/cloud-left-bottom.png"),
+    url("../img/clouds/cloud-center-bottom.png"),
+    url("../img/clouds/cloud-right-bottom.png"),
+    url("../img/clouds/cloud-right-bottom.png"),
+    url("../img/clouds/cloud-right-bottom.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center, -374px -49px, 492px -220px, 11px 0px,
+    76px 366px, 306px 327px, 795px 394px, -196px 303px;
+}
+
+.background-clouds__second-layer {
+  width: 100%;
+  height: 100%;
+  background: url("../img/clouds/cloud-left-bottom-long.png"),
+    url("../img/clouds/cloud-center-bottom.png"),
+    url("../img/clouds/cloud-right-bottom.png");
+  background-repeat: no-repeat;
+  background-size: contain, 65%, 100%;
+  background-position: 124px 50px, 332px 246px, 250px 170px;
+}

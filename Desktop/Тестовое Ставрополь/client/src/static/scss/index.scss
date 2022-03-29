@@ -1,0 +1,208 @@
+@import "./fonts.scss";
+@import "./colors.scss";
+@import "./BackgroundContainer.scss";
+@import "./Slider.scss";
+
+* {
+  font-family: "Kinopoisk", "sans-serif";
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 97%;
+  margin: 0 auto;
+}
+
+.H__hero__container {
+  position: relative;
+  padding-top: 50px;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: -0.6;
+}
+
+.text_small {
+  color: $text--black;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 200;
+}
+
+html {
+  .svg {
+    display: inline-block;
+  }
+  .arrow-right {
+    width: 26.37px;
+    height: 5px;
+    background: url("../img/arrow_right.svg") no-repeat transparent;
+    background-size: 100%;
+    transform: translateY(-2px);
+  }
+  .arrow-down {
+    width: 4.41px;
+    height: 63px;
+    background: url("../img/arrow_down.svg") no-repeat transparent;
+    background-size: contain;
+  }
+}
+
+//general
+.background-container__children {
+  position: relative;
+}
+.background-container__children * {
+  background: transparent;
+}
+
+.H__hero__logo-wrapper {
+  margin: 0 auto;
+  width: max-content;
+}
+
+.logo_darkGrey-img {
+  display: block;
+  width: 182.4px;
+  height: 25.09px;
+  background: url("../img/KinoPoisk\ HD\ logo\ H\ Dark\ Grey.svg") no-repeat
+    transparent;
+  background-size: contain;
+}
+
+.burger {
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  width: 19.62px;
+  height: 15.97px;
+  border: 0;
+  background: url("../img/Burger.svg") no-repeat transparent;
+  background-size: contain;
+}
+
+//Page Home
+// section-hero
+.H__section-hero {
+  position: relative;
+
+  z-index: 0;
+
+  width: 100%;
+  height: 100%;
+  background: url("../img/Sky.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .H__hero__header {
+    display: flex;
+    width: 100%;
+    margin-top: -23px;
+  }
+
+  .H__hero__title {
+    font-family: "Futura", "sans-serif";
+    color: $color--orange;
+    margin: 25px 0;
+  }
+
+  .H__hero__rect-container {
+    position: absolute;
+    top: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    .rect {
+      display: block;
+      width: 8px;
+      border: 1px solid black;
+      background-color: black;
+    }
+    .active {
+      display: inline-flex;
+      width: max-content;
+      height: max-content;
+      padding: 10px 0;
+      border: 0;
+      border-bottom: 1px solid black;
+      background-color: transparent;
+
+      .rect__count {
+        font-size: 16px;
+        font-weight: 600;
+        margin-right: 15px;
+        line-height: 1;
+      }
+      .rect__text {
+        margin-top: 1px;
+      }
+    }
+  }
+}
+
+//slider
+
+.racer {
+  width: 303.13px;
+  height: 436px;
+  background: url("../img/racer.png") no-repeat transparent;
+  background-size: contain;
+}
+
+.promocode-btn-wrapper {
+  padding: 21px 26px 19px 75px;
+  .promocode__link-text {
+    font-size: 15px;
+    line-height: 1;
+    text-align: center;
+    color: $text--black;
+  }
+  .arrow-right {
+    margin-left: 15px;
+  }
+}
+
+.H__hero__action-wrapper {
+  position: absolute;
+  bottom: 40px;
+  .action-text {
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+  }
+  .arrow-down {
+    display: block;
+    height: 40px;
+    margin-top: 10px;
+    transform: translateX(7px);
+  }
+}
+
+.H__hero__home-link {
+  position: absolute;
+  right: 0;
+  top: 41%;
+  writing-mode: vertical-lr;
+  .home-link-text {
+    font-weight: 500;
+  }
+}
+
+@import './media.scss';

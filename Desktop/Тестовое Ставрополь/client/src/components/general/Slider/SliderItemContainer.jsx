@@ -79,7 +79,7 @@ export const SliderItemContainer = ({ children, callback }) => {
   return (
     <div className="slider-item-container">
       <SliderButton
-        left={true}
+        rotate={true}
         positioningClassName="slider-button-left"
         onClick={() => {
           handleLeft();

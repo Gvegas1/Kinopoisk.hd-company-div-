@@ -11,6 +11,7 @@ export const SliderItemContainer = ({ children, callback }) => {
 
   const [pages, setPages] = useState([]);
   const [offset, setOffset] = useState(0);
+
   const [lastCountKey, setLastCountKey] = useState(0);
   const [currentCountKey, setCurrentCountKey] = useState(1);
 

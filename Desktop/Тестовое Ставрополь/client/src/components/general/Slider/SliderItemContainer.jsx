@@ -8,10 +8,10 @@ import { SliderButton } from "./SliderButton";
 
 export const SliderItemContainer = ({ children, callback }) => {
   const PAGE_WIDTH = document.body.clientWidth;
- /*  console.log(); */
 
   const [pages, setPages] = useState([]);
   const [offset, setOffset] = useState(0);
+
   const [lastCountKey, setLastCountKey] = useState(0);
   const [currentCountKey, setCurrentCountKey] = useState(1);
 
@@ -23,16 +23,16 @@ export const SliderItemContainer = ({ children, callback }) => {
   }
 
   useEffect(() => {
-    if (currentCountKey == 1) {
+    if (currentCountKey === 1) {
       setShowLeftButton(true);
     }
     if (currentCountKey > 1) {
       setShowLeftButton(false);
     }
-    if (currentCountKey == lastCountKey) {
+    if (currentCountKey === lastCountKey) {
       setShowRightButton(true);
     }
-    if (currentCountKey != lastCountKey) {
+    if (currentCountKey !== lastCountKey) {
       setShowRightButton(false);
     }
 
@@ -50,7 +50,7 @@ export const SliderItemContainer = ({ children, callback }) => {
       })
     );
     callback(lastCountKey, currentCountKey);
-  }, [children, callback, lastCountKey, currentCountKey]);
+  }, [children, callback, lastCountKey, currentCountKey, offset, PAGE_WIDTH]);
 
   const handleLeft = () => {
     setOffset((currentOffset) => {
@@ -87,7 +87,7 @@ export const SliderItemContainer = ({ children, callback }) => {
         }}
         style={{ display: showLeftButton ? "none" : "block" }}
       />
-      <div className="all-pages">{pages}</div>
+      <div className="slider-window">{pages}</div>
       <SliderButton
         positioningClassName="slider-button-right"
         onClick={() => {

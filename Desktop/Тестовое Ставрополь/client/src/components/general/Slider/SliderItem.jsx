@@ -1,4 +1,4 @@
-import { Children, cloneElement, useEffect, useMemo, useState } from "react";
+import { Children, cloneElement, useEffect, useState } from "react";
 
 export const SliderItem = ({
   children,
@@ -19,15 +19,14 @@ export const SliderItem = ({
         return cloneElement(child, { style });
       })
     );
-  }, [children, countKey]);
+  }, [children, propsSliderItem]);
 
   if (!countKey) {
     return console.error(
       "Не обнаружен props с названием countKey в компоненте Slider.Item"
     );
-  } else {
-    countKey = " " + "slider-item" + countKey;
   }
+  countKey = " " + "slider-item" + countKey;
 
   return (
     <div {...style} className={`slider-item${countKey}`}>

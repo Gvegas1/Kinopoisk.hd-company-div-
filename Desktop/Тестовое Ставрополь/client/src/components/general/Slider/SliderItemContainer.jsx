@@ -8,7 +8,6 @@ import { SliderButton } from "./SliderButton";
 
 export const SliderItemContainer = ({ children, callback }) => {
   const PAGE_WIDTH = document.body.clientWidth;
- /*  console.log(); */
 
   const [pages, setPages] = useState([]);
   const [offset, setOffset] = useState(0);

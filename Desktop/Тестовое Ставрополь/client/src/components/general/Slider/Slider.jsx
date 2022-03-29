@@ -11,13 +11,6 @@ export default class Slider extends Component {
   static Counter = SliderCounter;
   static Image = SliderImage;
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      countKey: 1,
-    };
-  }
-
   render() {
     return (
       <div className={`${this.props.positioningClassName} slider`}>

@@ -6,7 +6,7 @@ export const SliderItem = ({
   propsSliderItem,
   ...style
 }) => {
-  const [sliderItems, setSlidertItems] = useState([]);
+  const [sliderItems, setSliderItems] = useState([]);
 
   useEffect(() => {
     let style = {
@@ -14,7 +14,7 @@ export const SliderItem = ({
       transform: `translateX(${Object.values(propsSliderItem)}px)`,
     };
 
-    setSlidertItems(
+    setSliderItems(
       Children.map(children, (child) => {
         return cloneElement(child, { style });
       })
